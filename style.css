@@ -1,0 +1,121 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #fcfcfc;
+}
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: #711cc7;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 80px;
+    margin-left: 50px;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 2);
+}
+nav a{
+    font-weight: 600;
+    padding-right: 20px;
+}
+nav a:hover{
+    color: white;
+}
+.titulo{
+    margin-left: 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.texto{
+    margin-left: 130px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.imagendere{
+    display: flex;
+    justify-content: right;
+}
+.imagender{
+    position: relative;
+    bottom: 370px;
+    width: 950px;
+    height: 540px;
+}
+.imagenmedio{
+    display: flex;
+    justify-content: center;
+}
+.imagenmedi {
+    position: relative;
+    width: 950px;
+    height: 250px;
+    bottom: 270px;
+}
+.imagenrobotiz{
+    display: flex;
+    justify-content: left;
+}
+.imagenrobotizquierda{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    bottom: 520px;
+    margin-left: 80px;
+}
+.imagenrobotder{
+    display: flex;
+    justify-content: right;
+}
+.imagenrobotderecha {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    bottom: 775px;
+    margin-right: 80px;
+}
+@media (max-width: 425px) {
+    header {
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .logo img {
+    margin-left: 0;
+    }
+    
+    nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    nav a {
+    padding: 10px 0;
+    }
+    
+    .titulo,
+    .texto {
+    margin-left: 0;
+    }
+    
+    .imagender,
+    .imagenmedi,
+    .imagenrobotizquierda,
+    .imagenrobotderecha {
+    width: 100%;
+    height: auto;
+    position: static;
+    bottom: 0;
+    margin: 0;
+    }
+}
